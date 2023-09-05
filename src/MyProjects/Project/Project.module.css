@@ -1,0 +1,33 @@
+.projectWrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 280px;
+    margin-bottom: 20px;
+    padding: 30px;
+    background: white;
+
+}
+.imgWrapper{
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.imgWrapper img{
+    width: 250px;
+}
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(200px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.SlideIn {
+    animation-name: slideInFromBottom;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}

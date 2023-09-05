@@ -1,0 +1,180 @@
+.mainBlock {
+    min-height: 100vh;
+    background: rgb(0, 255, 255)
+}
+
+
+.mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    min-height: 100vh;
+    margin: 0 auto;
+
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 20px;
+
+}
+
+.portfolioPhoto {
+    width: 450px;
+    height: 450px;
+    border: 10px solid white;
+    border-radius: 50%;
+    background: #484848;
+    object-fit: cover;
+    margin-top: 95px;
+    margin-right: 200px;
+}
+
+.buttonView {
+    width: 190px;
+    height: 53px;
+    border: transparent;
+    background-color: #212529;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
+    text-shadow: none;
+    margin-left: 20px;
+    transition: background-color 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.buttonContact {
+    background: transparent;
+    border: transparent;
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: rgb(33, 37, 41);
+    transition: color 0.4s ease-in-out;
+    cursor: pointer;
+}
+.buttonView:hover{
+    background: #414141;
+}
+.buttonView:active{
+    background: #373737;
+}
+
+.buttonContact:hover{
+    background: transparent;
+    color: #7a7a7a;
+}
+.buttonContact:active{
+    background: transparent;
+    color: grey;
+}
+
+@media (max-width: 1270px) {
+    .portfolioPhoto {
+        height: 350px;
+        width: 350px;
+    }
+
+}
+
+
+@media (max-width: 1150px) {
+    .mainContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0;
+        padding-bottom: 20px;
+    }
+
+    .portfolioPhoto {
+        height: 300px;
+        width: 300px;
+        margin-right: -20px;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .info > span {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .info > h1 {
+        margin-bottom: 20px;
+    }
+
+    .info > p {
+        font-size: 20px;
+    }
+
+    .buttonContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 30px;
+        padding-bottom: 20px;
+
+    }
+
+    .portfolioPhoto {
+        margin-top: 100px;
+        width: 300px;
+        height: 300px;
+        border: 7px solid white;
+        border-radius: 50%;
+        background: #484848;
+        object-fit: cover;
+    }
+
+    .buttonView {
+        width: 190px;
+        height: 53px;
+        border: transparent;
+        background-color: #212529;
+        color: white;
+        font-weight: 600;
+        font-size: 16px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
+        text-shadow: none;
+    }
+
+    .buttonContact {
+        background: transparent;
+        border: transparent;
+        text-decoration: underline;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        color: rgb(33, 37, 41);
+    }
+}
+

@@ -1,0 +1,41 @@
+.Footer {
+    background: rgb(0, 255, 255)
+
+}
+
+.containerFooter {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 80%;
+    gap: 90px;
+    min-height: 60vh;
+    margin: 0 auto;
+    border: 1px solid red;
+
+}
+
+.iconContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 240px;
+}
+
+.Footer h2 {
+
+}
+
+.AllRights {
+    text-align: center;
+    color: white;
+    background: black;
+
+}
+
+.wrapperFooter {
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+

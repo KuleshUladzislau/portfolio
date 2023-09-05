@@ -1,0 +1,93 @@
+.Contacts{
+    min-height: 100vh;
+    background: rgb(0, 255, 255);
+
+}
+
+.ContactsContainer{
+    justify-content: center;
+}
+
+
+@media  (min-width: 990px) {
+
+}
+
+.ContactsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ContactsWrapper h2 {
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.iconContainer{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%;
+}
+
+.emailInput, .userNameInput, textarea {
+    border-top: none;
+    border-left: none;
+    border-right:none ;
+    border-bottom: 2px solid rgba(81, 81, 81, 0.18);
+    background: transparent;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.emailInput:focus, .userNameInput:focus, textarea:focus {
+    outline: none;
+    border-color: black;
+}
+
+.buttonForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.buttonForm{
+    margin-top: 20px;
+}
+.buttonForm button{
+    padding: 10px;
+    width: 100px;
+}
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(200px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.SlideIn {
+    animation-name: slideInFromBottom;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}

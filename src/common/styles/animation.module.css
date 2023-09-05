@@ -1,0 +1,21 @@
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(200px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.SlideInFromBottom150ms {
+    animation-name: slideInFromBottom;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}
+
+
+.SlideInFromBottom300s {
+    animation-name: slideInFromBottom;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}

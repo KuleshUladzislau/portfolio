@@ -1,46 +1,43 @@
-.skillsBlock{
+.myProjects {
     min-height: 100vh;
-    background: rgb(248, 249, 250)
-
+    background: #faf2f2;
 }
-.skillsContainer{
+
+.myProjectsContainer {
+    display: flex;
+    align-items: center;
     flex-direction: column;
     padding-top: 50px;
-    padding-bottom: 50px;
+
 
 }
-.skillsWrapper{
+.projectsWrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
-.skillsTitle{
-    font-size: 40px;
+.projectsTitle{
+    text-align: center;
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     background: rgb(0, 255, 255)
-}
 
-.skills{
+}
+.projects{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 70px;
     flex-wrap: wrap;
-    width: 70%;
-    padding-bottom: 20px;
+    margin-top: 70px;
+    width: 100%;
+
 
 }
 
 @media (max-width:700px){
-    .skills{
+    .projects{
         justify-content: center;
-    }
-    .skillsContainer{
-        padding-bottom: 20px;
-    }
-
-    .skillsTitle{
-        text-align: center;
     }
 
 }
@@ -59,5 +56,3 @@
     animation-duration: 3s;
     animation-timing-function: ease-out;
 }
-
-

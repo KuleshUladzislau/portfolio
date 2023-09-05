@@ -1,0 +1,126 @@
+
+.header {
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+    background: rgb(0, 255, 255);
+    padding-right: 10%;
+    z-index: 99;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.headerActive {
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+    background: white;
+    padding-right: 10%;
+    z-index: 99;
+    width: 100%;
+    border-bottom: 2px solid rgba(232, 229, 229, 0.71);
+    transition: background-color 0.6s ease-in-out;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1150px) {
+
+    .header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 50px;
+        background-color: #ffffff;
+        padding-right: 10%;
+        z-index: 99;
+        width: 100%;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .headerBurger {
+        display: block;
+        position: relative;
+        top:0;
+        left:0;
+        width: 30px;
+        height: 20px;
+        z-index: 4;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .headerBurger span {
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        left: 0;
+        top: 9px;
+        transition: background-color 0.2s ease-in-out;
+    }
+
+    .headerBurger:before,
+    .headerBurger:after {
+        content: '';
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        left: 0;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .headerBurger:before {
+        top: 0;
+    }
+
+    .headerBurger:after {
+        bottom: 0;
+    }
+    .headerWrapper{
+        display: none;
+    }
+    .headerMenu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        opacity: 0.95;
+    }
+    .wrapperNavActive{
+        display: none;
+    }
+    .wrapperNav{
+        display: none;
+    }
+
+
+    .headerBurger.active:before {
+        background-color: white;
+        transform: rotate(45deg);
+        top: 7px;
+    }
+
+    .headerBurger.active:after {
+        background-color: white;
+        transform: rotate(-45deg);
+        top: 7px;
+    }
+    .headerBurger.active span{
+        display: none;
+    }
+
+
+
+
+
+}

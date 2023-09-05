@@ -1,0 +1,96 @@
+.aboutMeContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.AboutMe {
+    padding-top: 50px;
+    background: #faf2f2;
+}
+
+.wrapperAboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 130px
+}
+
+
+.textBlockAboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.NameTitle {
+    font-size: 42px;
+}
+
+.titleAboutMe {
+    margin: 100px 0 0 0;
+}
+
+
+.AboutMeDescription {
+    font-size: 20px;
+}
+
+.itemContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.item > p {
+    margin-top: 10px;
+}
+@media  (max-width: 990px) {
+    .itemContainer {
+
+        flex-direction: column;
+
+    }
+    .item {
+       margin-top: 30px;
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(200px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.SlideInFromBottom150ms {
+    animation-name: slideInFromBottom;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}
+
+
+.SlideInFromBottom300s {
+    animation-name: slideInFromBottom;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}

@@ -1,11 +1,38 @@
-import React from 'react';
-import style from './Header.module.css'
+import React, {useContext, useEffect, useRef, useState} from 'react';
+import style from './Nav.module.css'
+import {useLocation} from "react-router-dom";
+import {ScrollContext} from "../assets/scrollContext";
 
-export const Header = () => {
+
+export const Nav = () => {
+
+    const links = ['home', 'aboutMe', 'skills', 'projects', 'contacts']
+    const {currentPage,setCurrentPage} = useContext(ScrollContext);
+
+    const handleNavClick = (id) => {
+        const element = document.getElementById(id)
+
+        if (element) {
+            element.scrollIntoView({behavior: 'smooth'})
+
+        }
+    }
+
+    const mapedLinks = links.map((l, i) => {
+        const activeLink = currentPage === l ? style.activeLink : style.link
+
+        return (
+            <li key={l} onClick={() => handleNavClick(`${l}`)}>
+                <a className={activeLink}>{l}</a>
+            </li>
+        )
+    })
+
+
     return (
-        <div className={style.header}>
-
-        </div>
+        <ul className={style.nav}>
+            {mapedLinks}
+        </ul>
     );
 };
 
