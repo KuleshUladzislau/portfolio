@@ -14,6 +14,20 @@ import {ScrollContext} from "./assets/scrollContext";
 function App() {
 
 
+    const [overflowMode,setOverflowMode] = useState(false)
+
+    const onClickHandler = ()=>{
+        setOverflowMode(!overflowMode)
+    }
+
+    useEffect(() => {
+        if (overflowMode) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+    }, [overflowMode]);
+
 
     const {setCurrentPage } = useContext(ScrollContext);
     const scrollHandler = () => {
@@ -41,11 +55,11 @@ function App() {
         window.addEventListener('scroll', scrollHandler);
     }, []);
 
-
+    console.log(overflowMode)
 
     return (
-        <div className="App" >
-            <Header/>
+        <div  >
+            <Header setOverflowMode={onClickHandler} />
             <Main/>
             <AboutMe/>
             <Skills/>

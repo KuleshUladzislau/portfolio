@@ -3,7 +3,7 @@ import style from './Header.module.css'
 import {Nav} from "../nav/Nav";
 
 
-export const Header = (props) => {
+export const Header = ({setOverflowMode}) => {
     const [on, setOn] = useState(false)
     const activeBurger = style.headerBurger + (on ? ' ' + style.active : '')
     const activeMenu = style.headerMenu + (on ? ' ' + style.active : '')
@@ -17,6 +17,7 @@ export const Header = (props) => {
 
     const onClickHandler = () => {
         setOn(!on)
+        setOverflowMode()
     }
     const h2ref = useRef(null);
 

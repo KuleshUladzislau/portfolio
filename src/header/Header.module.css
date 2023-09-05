@@ -95,6 +95,7 @@
         height: 100vh;
         background-color: black;
         opacity: 0.95;
+
     }
     .wrapperNavActive{
         display: none;
