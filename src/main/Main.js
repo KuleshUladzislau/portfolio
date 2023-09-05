@@ -6,7 +6,7 @@ import {logDOM} from "@testing-library/react";
 export const Main = () => {
 
 
-    const [active, setActive] = useState(false)
+
 
 
     const handleNavClick = (id) => {

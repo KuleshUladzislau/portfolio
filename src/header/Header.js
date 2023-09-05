@@ -45,14 +45,14 @@ export const Header = (props) => {
         <div ref={h2ref}>
             <div className={scrollMenu}>
                 <div className={style.headerWrapper}>
-                    <Nav />
+                    <Nav  />
                 </div>
                 <div onClick={onClickHandler} className={activeBurger}>
                     <span></span>
                 </div>
                 {on &&
                     <div className={activeMenu}>
-                        <div className={style.headerMenu}><Nav/></div>
+                        <div  className={style.headerMenu}><Nav activeMenu={onClickHandler}/></div>
                     </div>
                 }
 

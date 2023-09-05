@@ -4,18 +4,18 @@ import {useLocation} from "react-router-dom";
 import {ScrollContext} from "../assets/scrollContext";
 
 
-export const Nav = () => {
+export const Nav = ({activeMenu}) => {
 
     const links = ['home', 'aboutMe', 'skills', 'projects', 'contacts']
     const {currentPage,setCurrentPage} = useContext(ScrollContext);
 
     const handleNavClick = (id) => {
         const element = document.getElementById(id)
-
         if (element) {
             element.scrollIntoView({behavior: 'smooth'})
-
+            activeMenu()
         }
+
     }
 
     const mapedLinks = links.map((l, i) => {
