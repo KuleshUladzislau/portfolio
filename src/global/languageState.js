@@ -39,7 +39,7 @@ export const state = {
         },
         skillsPage:{
             id:'skills',
-            h2:'How i help you in your next project'
+            h2:'How can i help you in your next project'
         },
         projectPage:{
             h2:'My Projects',
@@ -74,7 +74,7 @@ export const state = {
             help:'How can I help You?:',
             id:'contacts',
             living:'Living in:',
-            address:'Minsk Belarus',
+            address:'Minsk, Belarus',
             recommendationForUser:
 
              'Please give me as accurate information as possible so that our first meeting is as productive as possible. ' +
@@ -169,7 +169,7 @@ export const state = {
                 ' вашими требованиями. Заполните ,пожалуйста, форму или можем пообщаться лично.',
             phone:'Тел:',
             living:'Проживаю:',
-            address:'Минск Беларусь',
+            address:'Минск, Беларусь',
             errors:{
                 email:'Неверный формат почты',
                 message:'Пожалуйста ,заполните поле',
