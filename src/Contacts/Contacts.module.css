@@ -1,17 +1,39 @@
 .Contacts{
     min-height: 100vh;
-    background: rgb(0, 255, 255);
+    background: #F7DF1E;
+    padding-bottom:40px;
 
 }
 
 .ContactsContainer{
     justify-content: center;
 }
-
-
-@media  (min-width: 990px) {
+.recomendationForUser{
+    word-spacing: 0.5em;
 
 }
+
+.contentContainer {
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content:space-between;
+    gap:80px;
+
+
+}
+
+.formWrapper {
+    width: 50%;
+}
+
+.letterWrapper{
+    display:flex;
+    flex-direction:column;
+    width:50%;
+    gap:40px;
+}
+
+
 
 .ContactsWrapper {
     display: flex;
@@ -27,7 +49,6 @@
 .iconContainer{
     display: flex;
     gap: 30px;
-    margin-bottom: 60px;
 }
 
 .formContainer {
@@ -90,4 +111,27 @@
     animation-name: slideInFromBottom;
     animation-duration: 3s;
     animation-timing-function: ease-out;
+}
+@media  (max-width: 990px) {
+    .contentContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column-reverse;
+
+    }
+    .iconContainer{
+        display: flex;
+        gap: 20px;
+        margin-left: -10px;
+    }
+    .recomendationForUser{
+        display: none;
+    }
+    .phone{
+        display: flex;
+        flex-direction: row;
+        min-width: 250px;
+        margin-left: -10px;
+    }
 }

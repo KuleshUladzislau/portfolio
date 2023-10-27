@@ -9,7 +9,7 @@
 
 .AboutMe {
     padding-top: 50px;
-    background: #faf2f2;
+
 }
 
 .wrapperAboutMe {
@@ -17,7 +17,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    gap: 130px
+    gap: 150px
 }
 
 
@@ -31,8 +31,19 @@
 }
 
 .NameTitle {
-    font-size: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 32px;
+
 }
+.NameTitle>h2 {
+    font-size: 32px;
+    background: #F7DF1E;
+    padding: 10px;
+}
+
 
 .titleAboutMe {
     margin: 100px 0 0 0;
@@ -41,6 +52,7 @@
 
 .AboutMeDescription {
     font-size: 20px;
+    text-align: left;
 }
 
 .itemContainer {
@@ -49,7 +61,6 @@
     flex-direction: row;
     justify-content: space-evenly;
     padding-bottom: 50px;
-
 }
 
 .item {

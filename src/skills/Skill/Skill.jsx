@@ -8,7 +8,7 @@ export const Skill = ({img,title}) => {
             <div className={style.skillWrapper}>
                 <div className={style.icon}>
                     <img src={img} alt="Photo"/>
-                    <h3>{title}</h3>
+                    <h4>{title}</h4>
                 </div>
 
             </div>

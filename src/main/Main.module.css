@@ -1,6 +1,6 @@
 .mainBlock {
     min-height: 100vh;
-    background: rgb(0, 255, 255)
+    background: #F7DF1E;
 }
 
 
@@ -27,7 +27,8 @@
     flex-direction: column;
     text-align: center;
     gap: 10px;
-    margin-top: 50px;
+    overflow-y: hidden;
+
 }
 
 .buttonContainer {
@@ -47,6 +48,16 @@
     object-fit: cover;
     margin-top: 95px;
     margin-right: 200px;
+    animation: photoScale 2s;
+}
+
+@keyframes photoScale {
+    from {
+        transform: scale(0%);
+    }
+    to {
+        transform: scale(100%);
+    }
 }
 
 .buttonView {
@@ -119,7 +130,6 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding: 30px;
     }
 
     .info > span {
@@ -153,6 +163,7 @@
         border-radius: 50%;
         background: #484848;
         object-fit: cover;
+        animation: nonern start;
     }
 
     .buttonView {
@@ -176,5 +187,46 @@
         letter-spacing: .1rem;
         color: rgb(33, 37, 41);
     }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes erasing {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+
+@keyframes typingErasing {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+.TextContainer {
+    overflow: hidden;
+}
+
+.NameTitleOnLeft {
+    animation: typingErasing 7s infinite;
+    white-space: nowrap;
+    overflow: hidden;
+
 }
 

@@ -1,6 +1,5 @@
 .myProjects {
     min-height: 100vh;
-    background: #faf2f2;
 }
 
 .myProjectsContainer {
@@ -21,7 +20,7 @@
     text-align: center;
     margin-top: 50px;
     margin-bottom: 20px;
-    background: rgb(0, 255, 255)
+    background: #F7DF1E;
 
 }
 .projects{
@@ -34,6 +33,11 @@
 
 
 }
+
+.textOverLay{
+
+}
+
 
 @media (max-width:700px){
     .projects{

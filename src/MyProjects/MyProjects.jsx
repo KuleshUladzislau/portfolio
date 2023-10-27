@@ -5,23 +5,29 @@ import containerStyle from '../common/styles/Container.module.css'
 import socialNetwork from '../common/photos/projects/social-page_main.png'
 import todoList from '../common/photos/projects/to-do-list.png'
 import ScrollAnimation from 'react-animate-on-scroll';
-export const MyProjects = () => {
-    const projects = [
-        {img:socialNetwork,title:'Social Network'},
-        {img:todoList,title:'ToDoList'}
-    ]
+export const MyProjects = ({projectsState}) => {
+    const projects = projectsState.projects
+
+
     return (
-        <div className={style.myProjects} id='projects'>
+        <div className={style.myProjects} id={projectsState.id}>
             <div className={`${containerStyle.container} ${style.myProjectsContainer}`}>
                 <div className={style.projectsWrapper}>
 
                     <ScrollAnimation animateIn={style.SlideIn} animateOnce={true} >
-                        <h2 className={style.projectsTitle}>My Projects</h2>
+                        <h2 className={style.projectsTitle}>{projectsState.h2}</h2>
                     </ScrollAnimation>
 
                     <div className={style.projects}>
                         {
-                            projects.map((el,index)=> <Project key={index} img={el.img} projectName={el.title}/>)
+                            projects.map((el,index)=>
+                                <Project
+                                    key={index}
+                                    img={el.img}
+                                    link={el.link}
+                                    projectName={el.title}
+                                    description={el.description}
+                                />)
                         }
                     </div>
                 </div>
