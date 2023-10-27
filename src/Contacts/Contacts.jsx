@@ -46,7 +46,7 @@ export const Contacts = ({contactsState}) => {
             <div className={`${styleContainer.container} ${style.ContactsContainer}`}>
                 <div className={style.ContactsWrapper}>
                     <ScrollAnimation animateIn={style.SlideIn} animateOnce={true}>
-                        <h2>{contactsState.h2}</h2>
+                        <h2 className={style.title}>{contactsState.h2}</h2>
                     </ScrollAnimation>
 
                     <div className={style.contentContainer}>

@@ -2,8 +2,6 @@ import React from 'react';
 import {Project} from "./Project/Project";
 import style from './MyProject.module.css'
 import containerStyle from '../common/styles/Container.module.css'
-import socialNetwork from '../common/photos/projects/social-page_main.png'
-import todoList from '../common/photos/projects/to-do-list.png'
 import ScrollAnimation from 'react-animate-on-scroll';
 export const MyProjects = ({projectsState}) => {
     const projects = projectsState.projects
