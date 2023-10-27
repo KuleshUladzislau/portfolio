@@ -74,7 +74,12 @@ export const state = {
              'Please give me as accurate information as possible so that our first meeting is as productive as possible. ' +
                 'I’ll be happy to help you if my skills and experience match your requirements. ' +
                 'Please fill out the form or we can chat personally.',
-            phone:'Call:'
+            phone:'Call:',
+            errors:{
+                email:'Invalid email address',
+                message:'Please fill in the field',
+                name:'Please fill in the field'
+            }
         }
     },
     ru:{
@@ -152,7 +157,12 @@ export const state = {
                 'Пожалуйста,дайте как можно более точную информацию,чтобы наша первая встреча была' +
                 ' мамксимально продуктивной. Буду рад Вам помочь,если мои навыки и опыт совпадут с' +
                 ' вашими требованиями. Заполните ,пожалуйста, форму или можем пообщаться лично.',
-            phone:'Тел:'
+            phone:'Тел:',
+            errors:{
+                email:'Неверный формат почты',
+                message:'Пожалуйста ,заполните поле',
+                name:'Пожалуйста ,заполните поле'
+            }
         }
 
     }

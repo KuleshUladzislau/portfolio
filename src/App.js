@@ -10,6 +10,7 @@ import {useContext, useEffect, useLayoutEffect, useRef, useState} from "react";
 import {logDOM} from "@testing-library/react";
 import {ScrollContext} from "./assets/scrollContext";
 import {state} from "./global/languageState";
+import {Toast} from "./common/Toast/Toast";
 
 
 function App() {
@@ -76,6 +77,7 @@ function App() {
             <MyProjects projectsState={state[language].projectPage}/>
             <Contacts contactsState={state[language].contactsPage}/>
             <Footer/>
+            <Toast/>
         </div>
     );
 }
