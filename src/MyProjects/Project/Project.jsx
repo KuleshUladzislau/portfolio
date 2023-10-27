@@ -10,7 +10,7 @@ export const Project = ({description, projectName, img,link}) => {
                    <img src={img} alt="Photo project"/>
                 </div>
                 <a href={`${link}`} target={'_blank'} className={style.textOverLay} >
-                    <p>{description}</p>
+                    <p className={style.description}>{description}</p>
                 </a>
                 <div>
                     <h3>{projectName}</h3>

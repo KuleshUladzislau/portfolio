@@ -14,7 +14,10 @@
 
 }
 
-
+.description{
+    font-size: 20px;
+    padding: 10px;
+}
 .imgWrapper img{
     width: 250px;
     height: 300px;
