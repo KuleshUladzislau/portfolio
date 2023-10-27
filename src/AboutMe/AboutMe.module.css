@@ -11,7 +11,15 @@
     padding-top: 50px;
 
 }
-
+.itemTitle{
+    font-size: 16px;
+    color: #8e9a9d;
+}
+.itemDescription{
+    color:#212529;
+    font-size: 18px;
+    font-weight: 500;
+}
 .wrapperAboutMe {
     display: flex;
     flex-direction: column;
@@ -41,6 +49,7 @@
 .NameTitle>h2 {
     font-size: 34px;
     background: #F7DF1E;
+    font-weight: 500;
     padding: 10px;
 }
 

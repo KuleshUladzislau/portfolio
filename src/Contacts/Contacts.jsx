@@ -12,36 +12,34 @@ import {useForm} from "react-hook-form";
 import * as emailjs from "emailjs-com";
 import {toast} from "react-toastify";
 import * as z from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
-
-
+import {zodResolver} from "@hookform/resolvers/zod";
 
 
 export const Contacts = ({contactsState}) => {
-    const icon = [telegram, inst, git, link]
+    const icon = [
+        {img:telegram,link:'https://t.me/kulesh_uladzsislau'},
+        {img:git,link:'https://github.com/KuleshUladzislau'},
+        {img:link,link:'https://www.linkedin.com/in/uladzislau-kulesh-0446ba286/'},
 
-    useEffect(()=>{
-        console.log('render')
-    },[])
+        ]
+
 
     const {
         register,
         handleSubmit,
         reset,
-        formState:{errors}
+        formState: {errors}
     } = useForm({
-        defaultValues:{
-            name:'',
-            email:'',
-            message:''
+        defaultValues: {
+            name: '',
+            email: '',
+            message: ''
         },
-
-
 
 
     })
 
-    const onSubmitHandler =  async (data) => {
+    const onSubmitHandler = async (data) => {
 
         const templateParams = {
             from_name: data.name,
@@ -49,7 +47,7 @@ export const Contacts = ({contactsState}) => {
             message: data.message
 
         }
-         await   toast.promise(
+        await toast.promise(
             emailjs.send(
                 'service_46hit9n',
                 'template_e0gngbw',
@@ -57,14 +55,13 @@ export const Contacts = ({contactsState}) => {
                 'ot89EGfgctJ9-k6PJ'
             ),
             {
-                pending:'Waiting...',
-                success:'Your letter has been sent!',
-                error:'an error occurred, try again'
+                pending: 'Waiting...',
+                success: 'Your letter has been sent!',
+                error: 'an error occurred, try again'
             }
         )
 
         reset()
-
 
 
     }
@@ -92,17 +89,20 @@ export const Contacts = ({contactsState}) => {
                                     <label className={style.label}>{contactsState.email}</label>
                                     <input className={style.userNameInput}
                                            type='text' {
-                                        ...register('email',
-                                            {required: true,pattern: {
-                                               value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                                               message: contactsState.errors.email,
-                                           }}
-                                        )}/>
-                                    {errors.email && <div className={style.error}>{errors.email.message}</div>}
+                                               ...register('email',
+                                                   {
+                                                       required: true, pattern: {
+                                                           value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                                                           message: contactsState.errors.email,
+                                                       }
+                                                   }
+                                               )}/>
+                                    {errors.email && <div className={style.error}>{errors.email.message ? errors.email.message : contactsState.errors.message}</div>}
                                     <label className={style.label}>{contactsState.help}</label>
                                     <textarea name="" id="" cols="30"
                                               rows="5" {...register('message', {required: true})}></textarea>
-                                    {errors.message && <div className={style.error}>{contactsState.errors.message}</div>}
+                                    {errors.message &&
+                                        <div className={style.error}>{contactsState.errors.message}</div>}
 
                                     <div className={style.buttonForm}>
 
@@ -114,22 +114,28 @@ export const Contacts = ({contactsState}) => {
                         </div>
                         <div className={style.letterWrapper}>
 
-                                <h3 className={style.recomendationForUser}>
-                                    <ScrollAnimation animateIn={style.SlideIn} animateOnce={true}>
+                            <h3 className={style.recomendationForUser}>
+                                <ScrollAnimation animateIn={style.SlideIn} animateOnce={true}>
                                     {contactsState.recommendationForUser}
-                                    </ScrollAnimation>
-                                </h3>
-                                <div className={style.phone}>
-                                    <ScrollAnimation animateIn={style.SlideIn} animateOnce={true}>
-                                    <p>{contactsState.phone} +375 (25) 744-59-80</p>
-
-                                    </ScrollAnimation>
-                                </div>
+                                </ScrollAnimation>
+                            </h3>
+                            <div className={style.phone}>
+                                <ScrollAnimation animateIn={style.SlideIn} animateOnce={true}>
+                                    <p className={style.labelPhone}><b>{contactsState.phone}</b></p>
+                                    <p className={style.phoneNumber}>+375 25 744-59-80</p>
+                                </ScrollAnimation>
+                            </div>
+                            <div className={style.phone}>
+                                <ScrollAnimation animateIn={style.SlideIn} animateOnce={true}>
+                                    <p className={style.labelPhone}><b>{contactsState.living}</b></p>
+                                    <p className={style.phoneNumber}>{contactsState.address}</p>
+                                </ScrollAnimation>
+                            </div>
 
                             <ScrollAnimation animateIn={style.SlideIn} animateOnce={true}>
                                 <div className={style.iconContainer}>
                                     {
-                                        icon.map((el, index) => <Icon key={index} img={el}/>)
+                                        icon.map((el, index) => <Icon key={index} img={el.img} link={el.link}/>)
                                     }
 
                                 </div>

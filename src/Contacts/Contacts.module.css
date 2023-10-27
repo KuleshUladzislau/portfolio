@@ -8,11 +8,17 @@
 .ContactsContainer{
     justify-content: center;
 }
-.recomendationForUser{
-    word-spacing: 0.5em;
+.recomendationForUser {
+    font-family: 'Poppins 200', sans-serif;
+    font-weight: 400;
 
 }
-
+.phoneNumber{
+    font-size: 18px;
+}
+.labelPhone{
+    font-size: 21px;
+}
 .contentContainer {
     display: flex;
     flex-direction:row-reverse;

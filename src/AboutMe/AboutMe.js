@@ -16,8 +16,8 @@ export const AboutMe = ({aboutMeState}) => {
     const itemsBlock = items.map(i=>{
         return(
             <div className={style.item}>
-                <p>{i.title}</p>
-                <p>{i.description}</p>
+                <p className={style.itemTitle}>{i.title}</p>
+                <p className={style.itemDescription}>{i.description}</p>
             </div>
         )
     })

@@ -26,33 +26,42 @@
 
 }
 
-.language{
+.language {
     position: absolute;
-    top:13px;
-    right: 20px;
+    top: 11px;
+    right: 70px;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 5px;
-    margin-left: 20px;
-
 }
-.languageTrait{
+
+.activeOnlanguage {
+    position: absolute;
+    top: 11px;
+    right: 130px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.languageTrait {
     margin-bottom: 3px;
     pointer-events: none;
 }
 
-.defaultLanguage{
+.defaultLanguage {
     cursor: pointer;
 }
 
-.languageWithActiveHeader{
-    color:white;
+.languageWithActiveHeader {
+    color: white;
     cursor: pointer;
 }
 
-.activeLanguage{
-    color:#F7DF1E;
+.activeLanguage {
+    color: #F7DF1E;
     cursor: pointer;
 }
 
@@ -71,15 +80,15 @@
         transition: background-color 0.3s ease-in-out;
     }
 
-    .headerActive{
+    .headerActive {
         justify-content: flex-end;
     }
 
     .headerBurger {
         display: block;
         position: relative;
-        top:0;
-        left:20px;
+        top: 0;
+        left: 20px;
         width: 30px;
         height: 20px;
         z-index: 4;
@@ -96,7 +105,7 @@
         transition: background-color 0.2s ease-in-out;
     }
 
-    .language{
+    .language {
         margin-right: 40px;
     }
 
@@ -118,9 +127,11 @@
     .headerBurger:after {
         bottom: 0;
     }
-    .headerWrapper{
+
+    .headerWrapper {
         display: none;
     }
+
     .headerMenu {
         position: fixed;
         top: 0;
@@ -133,10 +144,12 @@
         opacity: 0.95;
 
     }
-    .wrapperNavActive{
+
+    .wrapperNavActive {
         display: none;
     }
-    .wrapperNav{
+
+    .wrapperNav {
         display: none;
     }
 
@@ -152,23 +165,26 @@
         transform: rotate(-45deg);
         top: 7px;
     }
-    .headerBurger.active span{
+
+    .headerBurger.active span {
         display: none;
     }
 
-    .languageWithActiveHeader{
-        color:#F7DF1E;
+    .languageWithActiveHeader {
+        color: #F7DF1E;
         cursor: pointer;
     }
 
 
-    .languageBurger{
-        color:#F7DF1E;
+    .languageBurger {
+        color: #F7DF1E;
     }
-    .languageBurgerActive{
-        color:white;
+
+    .languageBurgerActive {
+        color: white;
     }
-    .languageTraitBurger{
+
+    .languageTraitBurger {
         color: white;
         margin-bottom: 3px;
         pointer-events: none;
@@ -177,6 +193,12 @@
 
 }
 
-@media screen and (max-height: 420px) {
+@media screen and (max-width: 420px) {
+    .language {
+        right: 40px;
+    }
 
+    .activeOnlanguage {
+        right: 80px;
+    }
 }

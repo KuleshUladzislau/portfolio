@@ -20,8 +20,9 @@
     transform: scale(1.1);
     transition: ease-in-out 0.3s ;
 }
-h4 {
+h5 {
     margin-top: 20px;
+    font-family: 'Poppins 200', sans-serif;
 }
 
 @keyframes slideInFromBottom {

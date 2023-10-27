@@ -9,7 +9,7 @@ export const Project = ({description, projectName, img,link}) => {
                 <div className={style.imgWrapper}>
                    <img src={img} alt="Photo project"/>
                 </div>
-                <a href={`${link}`} className={style.textOverLay} >
+                <a href={`${link}`} target={'_blank'} className={style.textOverLay} >
                     <p>{description}</p>
                 </a>
                 <div>

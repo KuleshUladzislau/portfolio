@@ -20,14 +20,17 @@ export const state = {
         aboutMe:{
             h2:'AboutMe',
             descriptionAboutMe:
-               'I’m a front-end developer. I develop applications on React using TypeScript ReduxToolKit and RTK Query to work with REST API.' +
-                ' I also have experience in creating my own UI libraries based on RadixUI and testing them using Storybook.' +
-                ' Creating an application from scratch, developing an authorisation flow, from independent components to connecting REST API.' +
-                ' I worked with various ui libraries: MaterialUi, AntDesign, Radix UI.' +
-                ' I have experience working with preprocessors SCSS, SAAS. Participation in teamwork, working with GIT.',
+                <>
+                  I’m a front-end developer. I develop applications on <b>React</b> using <b>TypeScript</b>
+                    <b>ReduxToolKit</b> and <b>RTK Query</b> to work with <b>REST API</b>.
+                  I also have experience in creating my own <b>UI libraries</b> based on RadixUI and testing them using <b>Storybook</b>.
+                  Creating an application from scratch, developing an authorisation flow, from independent components to connecting REST API
+                  I worked with various ui libraries: <b>MaterialUi</b>, <b>AntDesign</b>, <b>Radix UI</b>.
+                  I have experience working with preprocessors <b>SCSS</b>, <b>SAAS</b>. Participation in teamwork, working with <b>GIT</b>.
+                </>,
             items:[
-                {title:'From:',description:'Minsk,Belarus'},
-                {title:'Date of birth:',description:'December,1997 19'},
+                {title:'From:',description:'Minsk , Belarus'},
+                {title:'Date of birth:',description:'19 December 1997 '},
                 {title:'Email:',description:'kulesh_uladzislau@mail.ru'},
                 {title:'Name:',description:'Kulesh Vlad'},
 
@@ -56,7 +59,7 @@ export const state = {
                 {
                     img:learningCards,
                     title:'Learning Cards',
-                    link:'https://kuleshuladzislau.github.io/TodoList',
+                    link:'https://team-cards-h4mu.vercel.app/login',
                     description: 'Training according to the old methodology ' +
                         '- constant repetition,where cards that are marked with a low rating fall out more often '
                 },
@@ -70,7 +73,10 @@ export const state = {
             email:'Your Email Address:',
             help:'How can I help You?:',
             id:'contacts',
+            living:'Living in:',
+            address:'Minsk Belarus',
             recommendationForUser:
+
              'Please give me as accurate information as possible so that our first meeting is as productive as possible. ' +
                 'I’ll be happy to help you if my skills and experience match your requirements. ' +
                 'Please fill out the form or we can chat personally.',
@@ -99,13 +105,17 @@ export const state = {
         aboutMe:{
             h2:'Обо Мне',
             descriptionAboutMe:
-               'Я фронтенд разработичк.Разрабатываю приложения на React используя TypeScript ReduxToolKit и RTK Query для ' +
-                'работы с REST API.Так же имею опыт в создании собственных UI библиотек на основе RadixUI ' +
-                'и тестирования их с помощью Storybook.Создание приложения с нуля ,разработка авторизационного флоу ,от независимых компонент до подключения REST API.Работал с различнимы ui библиотеками : MaterialUi, AntDesign,Radix UI.' +
-                'Имею опыт работы с препроцессорами SCSS,SAAS.' +
-                'Участие в командной работе ,работа с GIT. ',
+               <>
+                   Я <b>фронтенд разработичк</b>. Разрабатываю приложения на <b>React</b> используя <b>TypeScript</b>, <b>ReduxToolKit</b> и <b>RTK Query</b> для
+                 работы с <b>REST API</b>.Так же имею опыт в создании собственных <b>UI</b> библиотек на основе <b>RadixUI</b>
+                   <span> и</span> тестирования их с помощью <b>Storybook</b> . Создание приложения с нуля ,разработка авторизационного флоу ,от независимых компонент
+                 до подключения REST API.Работал с различнимы ui библиотеками : <b>MaterialUi</b>, <b>AntDesign</b>, <b>Radix
+                   UI</b>.
+                 Имею опыт работы с препроцессорами <b>SCSS</b> , <b>SAAS</b>.
+                 Участие в командной работе ,работа с <b>GIT</b>.
+                </>,
             items:[
-                {title:'Нахожусь:',description:'Минск,Беларусь'},
+                {title:'Нахожусь:',description:'Минск , Беларусь'},
                 {title:'Дата Рождения:',description:'19 декабря 1997'},
                 {title:'Почта:',description:'kulesh_uladzislau@mail.ru'},
                 {title:'Имя:',description:'Кулеш Влад'},
@@ -138,7 +148,7 @@ export const state = {
                 {
                     img:learningCards,
                     title:'Обучающие карточки',
-                    link:'https://kuleshuladzislau.github.io/TodoList',
+                    link:'https://team-cards-h4mu.vercel.app/login',
                     description: 'Обучение по старой методике - постоянного повторения' +
                         ' ,где карточки ,которые отмечены низкой оценкой,выпадают чаще '
                 },
@@ -158,6 +168,8 @@ export const state = {
                 ' мамксимально продуктивной. Буду рад Вам помочь,если мои навыки и опыт совпадут с' +
                 ' вашими требованиями. Заполните ,пожалуйста, форму или можем пообщаться лично.',
             phone:'Тел:',
+            living:'Проживаю:',
+            address:'Минск Беларусь',
             errors:{
                 email:'Неверный формат почты',
                 message:'Пожалуйста ,заполните поле',

@@ -84,7 +84,7 @@ export const Header = (
                                 headerNav={headerNav}
                             />
                         </div>
-                        <div className={style.language}>
+                        <div className={style.activeOnlanguage}>
                             <span className={languageStyleWithBurgerRu} onClick={onChangeEnLanguage}>EN</span>
                             <span className={style.languageTraitBurger}>|</span>
                             <span className={languageStyleWithBurgerEn} onClick={onChangeRuLanguage}>RU</span>
