@@ -47,13 +47,13 @@ export const state = {
                 {
                     img:socialNetwork,
                     title:'Social Network',
-                    link:'https://kuleshuladzislau.github.io/SocialNetWork/',
+                    link:'https://kuleshuladzislau.github.io/SocialNetWork',
                     description: 'Small social network where you can find friends, follow their activity and communicate with them.'
                 },
                 {
                     img:todoList,
                     title:'ToDoList',
-                    link:'https://kuleshuladzislau.github.io/TodoList',
+                    link:'https://kuleshuladzislau.github.io/Task-Manager/',
                     description:'The application helps to set tasks, to prioritise them To change their position with the help of drag and drop.'
                 },
                 {
@@ -141,7 +141,7 @@ export const state = {
                 {
                     img:todoList,
                     title:'Таск Менеджер',
-                    link:'https://kuleshuladzislau.github.io/TodoList',
+                    link:'https://kuleshuladzislau.github.io/Task-Manager/',
                     description: 'Приложение помогает ставить задачи,выставлять их приоритет,' +
                         'и с помощью драгн дропа менять их положение.'
                 },
