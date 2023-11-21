@@ -52,7 +52,7 @@ export const state = {
                 },
                 {
                     img:todoList,
-                    title:'ToDoList',
+                    title:'Task-Manager',
                     link:'https://kuleshuladzislau.github.io/Task-Manager/',
                     description:'The application helps to set tasks, to prioritise them To change their position with the help of drag and drop.'
                 },
